@@ -1,0 +1,52 @@
+<div class="container">
+  
+  <form (ngSubmit)="addProperty(addForm)" #addForm="ngForm">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label >title</label>
+        <input name="title" ngModel type="text" class="form-control" id="inputtitle" placeholder="TITLE">
+      </div>
+      <div class="form-group col-md-6">
+        <label >Amount or price</label>
+        <input name="amount" ngModel type="text" class="form-control" id="inputamount" placeholder="Amount in RS">
+      </div>
+    </div>
+    <div class="form-group">
+      <label >Name</label>
+      <input name="name" ngModel type="text" class="form-control" id="inputName" placeholder="upto 500 letters">
+    </div>
+    <div class="form-group">
+      <label >Phone Number</label>
+      <input name="phonenumber" ngModel type="text" class="form-control" id="inputNumber" placeholder="10-digit number">
+    </div>
+    <div class="form-group">
+      <label >categories </label>
+      <input name="categories" ngModel type="text" class="form-control" id="inputcategories" placeholder="like moblie or watch or something else">
+    </div>
+    
+    <div class="form-group">
+      <label>Describtion</label>
+      <input name="describition" ngModel type="text" class="form-control" id="inputAddress2" placeholder="say something about the product">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label  >add some thing </label>
+        <input name="something1" ngModel type="text" class="form-control" id="">
+      </div>
+     
+      <div class="form-group col-md-2">
+        <label>anything to add</label>
+        <input name="something2" ngModel type="text" class="form-control" id="">
+      </div>
+    </div>
+    <div class="form-group">
+        <label>UPLOAD YOUR IMAGE OF THE PRODUCT</label> <br>
+        <input type="file" (change)="photoselected($event)" >
+      </div>
+    
+    <button type="submit" class="btn btn-primary">add product</button>
+  
+  </form>
+  
+  
+</div>
